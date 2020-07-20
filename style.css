@@ -1,0 +1,40 @@
+body {
+    background-color: lightblue;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.firstLine {
+    color: orange;
+    text-align: center;
+}
+
+.secondLine {
+    color: green;
+    text-align: center;
+}
+
+.thirdLine {
+    color: grey;
+    text-align: center;
+}
+
+#newItem {
+    width: 500px;
+    height: 25px;
+}
+
+button {
+    margin: 0;
+    padding: 2px 15px;
+    border-radius: 5px;
+    border-style: solid;
+    font-size: 20px;
+    border-width: 1px;
+    margin-bottom: 0;
+}
