@@ -8,17 +8,19 @@ function addToDo() {
     var newItem = document.createElement('li');
     newItem.innerHTML = a;
 
+    newItem.className += "listItem";
+
     var crossButton = document.createElement('button');
     crossButton.innerText = 'X';
     newItem.appendChild(crossButton);
+
+    var close = document.getElementById();
+    close.parentNode.removeChild(crossButton);
+
+   crossButton.className += "closeButton";
     
     var list = document.getElementById('list');
     list.appendChild(newItem);
 
     document.getElementById('text-box').value = ''; 
 }
-
-function closeList() {
-    var newList = document.getElementById("list");
-    newList.removeChild(newList.childNodes[0]);
-  }

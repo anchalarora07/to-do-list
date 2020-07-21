@@ -1,5 +1,5 @@
 body {
-    background-color: lightblue;
+    background-color: burlywood;
     font-family: sans-serif;
     font-weight: bold;
     text-align: center;
@@ -17,7 +17,7 @@ h1 {
 }
 
 #firstLine {
-    color: orange;
+    color: orangered;
     text-align: center;
     font-weight: 600;
 }
@@ -60,11 +60,22 @@ h1 {
     margin: 0 300px;
 }
 
-li {
-    background-color: blue;
+.listItem {
+    background-color: lightblue;
     color: cadetblue;
     margin: 5px;
     text-align: left;
     padding: 5px;
     border-style: solid;
+}
+
+.closeButton {
+    border: none;
+    background-color: lightblue;
+    color: cadetblue;
+    float: right;
+}
+
+.closeButton:hover {
+    opacity: 0.6;
 }
