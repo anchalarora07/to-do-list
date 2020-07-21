@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src="script.js"></script>
         <link rel="stylesheet" href="style.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     </head>
     <body>
-        <h1>Work to-dos</h1>
-        <h3 class="firstLine">Enter text into the input field to add items to your list(max. 28 words).</h3>
-        <h3 class="secondLine">Click the item to mark it as complete.</h3>
-        <h3 class="thirdLine">Click the "X" to remove the item from your list.</h3><br>
-        <input type="text" placeholder="New Item..." id="newItem">
-        <button><i class="fas fa-pencil-alt"></i></button>
-    </body>
+        <div class="whole">
+            <div class="head">
+                <h1>Work to-dos</h1>
+            </div>
+            <div class="rows">
+                <p id="firstLine" maxlength="27">Enter text into the input field to add items to your list (max. 28 words).</para>
+                <p id="secondLine">Click the item to mark it as complete.</p>
+                <p id="thirdLine">Click the "X" to remove the item from your list.</p><br>
+            </div>
+            <div class="body">
+                <div class="button">
+                    <input type="text" placeholder="New Item..." id="text-box">
+                    <button id="btn" onclick="addToDo()"><i class="fas fa-pencil-alt"></i></button>
+                </div>
+                <div class="itemNames">
+                    <ul id="list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </body>
 </html>
