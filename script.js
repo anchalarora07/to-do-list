@@ -13,14 +13,17 @@ function addToDo() {
     var crossButton = document.createElement('button');
     crossButton.innerText = 'X';
     newItem.appendChild(crossButton);
-
-    var close = document.getElementById();
-    close.parentNode.removeChild(crossButton);
-
-   crossButton.className += "closeButton";
+    
+    crossButton.addEventListener("click",removeNode(newItem))
+    crossButton.className += "closeButton";
     
     var list = document.getElementById('list');
     list.appendChild(newItem);
 
     document.getElementById('text-box').value = ''; 
+}
+
+func removeNode(element) {
+        var list = document.getElementById('list');
+        list.removeChild(element);
 }
