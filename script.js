@@ -1,7 +1,7 @@
 function addToDo() {
 
     var a = document.getElementById('text-box').value;
-    if(a == '') {
+    if(!a) {
         setErrorMessage('Please Enter Something!!!!');
     }
 
@@ -23,6 +23,7 @@ function addToDo() {
     document.getElementById('text-box').value = ''; 
 }
 
+// this method will remove node from HTML
 func removeNode(element) {
         var list = document.getElementById('list');
         list.removeChild(element);
